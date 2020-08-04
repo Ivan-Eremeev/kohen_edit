@@ -4094,38 +4094,38 @@ a.video::before, a.video::after {
         -webkit-align-items: flex-start;
         -moz-box-align: start;
         -ms-flex-align: start;
-        align-items: flex-start;
+        align-items: flex-start;horizontal
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -webkit-flex-flow: row wrap;
-        -moz-box-orient: horizontal;
+        -moz-box-orient: ;
         -moz-box-direction: normal;
         -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-           -moz-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+           -moz-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .filter__row {
+    /*.filter__row {
         margin: 0 -6px;
-    }
+    }*/
 }
 
 @media (min-width: 1025px) and (max-width: 1200px) {
-    .filter__row {
+   /* .filter__row {
         margin: 0 -12px;
-    }
+    }*/
 }
 
 @media (min-width: 1201px) {
-    .filter__row {
+    /*.filter__row {
         margin: 0 -25px;
-    }
+    }*/
 }
 
 .filter__item {
@@ -4136,6 +4136,9 @@ a.video::before, a.video::after {
 	-o-transition: opacity 0.3s ease;
 	-moz-transition: opacity 0.3s ease;
 	transition: opacity 0.3s ease;
+}
+.filter__item:first-child {
+    margin-right: 60px;
 }
 
 .filter__row .is-active,
@@ -4159,7 +4162,7 @@ a.video::before, a.video::after {
 @media (min-width: 1201px) {
     .filter__item {
         margin: 12px 0;
-        margin-right: 34px;
+        margin-right: 30px;
     }
     .filter__item:last-child {
         margin-right: 0;

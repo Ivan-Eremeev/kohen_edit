@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Коэн Правки</title>
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/style_edit.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style_edit.css">
 	<script src="js/scripts.js"></script>
 </head>
-<body>
+<body class="paddingTopFix">
 
 	<div class="all-wrap" id="page-top">
 		<a class="back-to-top js-page-to-top" href="#page-top" data-title="Наверх"></a> 
@@ -144,11 +144,231 @@
 					<div class="content-wrap">
 						<div class="content-wrap__inner">
 							<div class="page container">
-								<h1 class="text-black">Название страницы</h1>
+
+								<div class="h1_head">
+									<h1>Название страницы</h1>
+								</div>
+
+								<!-- filter -->
+								<div class="filter js-filter">
+									<div class="filter__label js-filter-label"><span>Фильтр</span><i class="fa fa-times"></i></div>
+									<div class="filter__inner" style="top: 0px;">
+										<!--
+										<div class="filter__row">
+											<div class="filter__item is-active"><a href="">Все материалы</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?pay=Y">платные</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?pay=N">Бесплатные</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?video=one" >отдельные видео</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?video=many">цикл видео</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?type=l">лекции</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?type=m">мастер классы</a></div>
+											<div class="filter__item"><a href="/en/lecture/">Language</a></div>
+										</div>
+										-->
+
+										<div class="filter__row">
+											<div class="filter__item is-active"><a href="/lecture/all-cycle/">Все материалы</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?prop=7">Психология</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?prop=8">Философия</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?prop=9">Эзотерика</a></div>
+											<div class="filter__item"><a href="/lecture/all-cycle/?prop=10">Саморазвитие</a></div>
+										</div>
+
+
+										<div class="controls">
+											<div class="controls__column controls__column_left">
+												<!--
+												<div class="controls__item"><a class="link-control link-control_sort is-down js-hover-tooltip" href="" title="Сортировать по убыванию"></a></div>
+												<div class="controls__item"><a class="link-control link-control_sort is-up js-hover-tooltip" href="" title="Сортировать по возрастанию"></a></div>
+												-->
+											</div>
+											<div class="controls__column controls__column_right">
+												<!--
+												<div class="controls__item"><a class="link-control link-control_repeat js-hover-tooltip" href="" title="Просмотр статей в случайном порядке" data-title-toggle="Отменить просмотр статей в случайном порядке"></a></div>
+												<div class="controls__item"><a class="link-control link-control_favorite js-hover-tooltip" href="profile.html" title="Перейти в избранное"></a></div>
+												-->
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<!-- /filter -->
+
+								<!-- travel -->
+								<div class="travel">
+									<div class="row">
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/spain.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Испания</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Испанию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/italia.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Италия</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Венгрию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/france.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Франция</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Париж</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/france.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Франция</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Париж</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/spain.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Испания</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Испанию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/spain.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Испания</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Испанию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/spain.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Испания</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Испанию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/italia.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Италия</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Венгрию</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+										<div class="travel__grid col-md-4 col-sm-6 col-12">
+											<div class="travel__item">
+												<a href="#" class="travel__img">
+													<img src="img/new/france.jpg" alt="">
+												</a>
+												<div class="travel__content">
+													<div class="travel__country">Франция</div>
+													<h2 class="travel__title">
+														<a href="#">Путешествие в Париж</a>
+													</h2>
+													<div class="travel__text">Путешествие в Испанию должно быть интересным и недорогим...</div>
+													<div class="lecture-hall-item__favorite">
+														<a class="link-control link-control_favorite js-to-favorite js-hover-tooltip" href="" title="" data-title-toggle="Удалить из избранного" data-id="24" data-category="1" data-lang="s1" data-name="Путешествие в Венгрию" data-user="1" data-title="Добавить в избранное"><div class="title-tooltip is-left" style="display: none;">Добавить в избранное</div></a>
+													</div>
+												</div>
+												<a href="#" class="travel__more">Читать подробнее</a>
+											</div>
+										</div>
+									</div>
+									<div class="section-more">
+										<a class="section-more__btn" href="#form_buy">Показать еще публикации</a>
+									</div>
+								</div>
+								<!-- /travel -->
 
 								<!-- autorCopyright -->
 								<div class="autorCopyright">
-									<div class="container">
+									<div class="autorCopyright__container">
 										<div class="autorCopyright__title">
 											<div class="title-b">Авторское право</div>
 										</div>
@@ -198,72 +418,35 @@
 
 								<!-- comments -->
 								<div class="comments">
-									<div class="container">
-										<h2 class="h2_black">Отзывы</h2>
-										<div class="comments__row row">
-											<div class="comments__grid col-md-4 col-sm-6 col-12">
-												<div class="comments__item">
-													<div class="comments__name">Анастасия, Москва</div>
-													<div class="comments__text">В последнее время мне попадается не так много книг, которые берёшь в руки, читаешь залпом, да еще и загибаешь уголки страниц у тридцати — чтобы потом легче найти нужные мысли. Да, я вандал — я загибаю уголки книг, ненавидьте меня...</div>
-													<a href="#" class="comments__more">Показать больше</a>
-												</div>
-											</div>
-											<div class="comments__grid col-md-4 col-sm-6 col-12">
-												<div class="comments__item">
-													<div class="comments__name">Ольга, Сочи</div>
-													<div class="comments__text">Информация правит миром! Нужная и важная информация гораздо ценнее денег. А информация это контент. Накушавшись новомодных фишек, люди приходят в интернет чтобы получить информацию, а не смотреть «гениальные» рекламные ролики...</div>
-													<a href="#" class="comments__more">Показать больше</a>
-												</div>
-											</div>
-											<div class="comments__grid col-md-4 col-sm-6 col-12">
-												<div class="comments__item">
-													<div class="comments__name">Дмитрий, Краснодар</div>
-													<div class="comments__text">Признаться, я постоянно забываю ее точное название и вынуждена копипастить его из предыдущего упоминания. Видимо, проявляется сила исходного слогана — он так и норовит пробиться наружу. То мне кажется...</div>
-													<a href="#" class="comments__more">Показать больше</a>
-												</div>
+									<h2 class="h2_black">Отзывы</h2>
+									<div class="comments__row row">
+										<div class="comments__grid col-md-4 col-sm-6 col-12">
+											<div class="comments__item">
+												<div class="comments__name">Анастасия, Москва</div>
+												<div class="comments__text">В последнее время мне попадается не так много книг, которые берёшь в руки, читаешь залпом, да еще и загибаешь уголки страниц у тридцати — чтобы потом легче найти нужные мысли. Да, я вандал — я загибаю уголки книг, ненавидьте меня...</div>
+												<a href="#" class="comments__more">Показать больше</a>
 											</div>
 										</div>
-										<div class="section-more">
-											<a class="section-more__btn" href="#form_buy">смотреть еще отзывы</a>
+										<div class="comments__grid col-md-4 col-sm-6 col-12">
+											<div class="comments__item">
+												<div class="comments__name">Ольга, Сочи</div>
+												<div class="comments__text">Информация правит миром! Нужная и важная информация гораздо ценнее денег. А информация это контент. Накушавшись новомодных фишек, люди приходят в интернет чтобы получить информацию, а не смотреть «гениальные» рекламные ролики...</div>
+												<a href="#" class="comments__more">Показать больше</a>
+											</div>
 										</div>
+										<div class="comments__grid col-md-4 col-sm-6 col-12">
+											<div class="comments__item">
+												<div class="comments__name">Дмитрий, Краснодар</div>
+												<div class="comments__text">Признаться, я постоянно забываю ее точное название и вынуждена копипастить его из предыдущего упоминания. Видимо, проявляется сила исходного слогана — он так и норовит пробиться наружу. То мне кажется...</div>
+												<a href="#" class="comments__more">Показать больше</a>
+											</div>
+										</div>
+									</div>
+									<div class="section-more">
+										<a class="section-more__btn" href="#form_buy">смотреть еще отзывы</a>
 									</div>
 								</div>
 								<!-- /comments -->
-
-								<div class="PopupOver">
-									<!-- commentsPopup -->
-									<div class="commentsPopup">
-										<h2 class="h2_black">Отзыв</h2>
-										<div class="commentsPopup__name">Анастасия, Москва</div>
-										<div class="commentsPopup__text">
-											<p>На отпуск планировала читать исключительно развлекательную литературу, накачала кучу триллеров и довольная как слон, в полуденный турецкий зной и детский сончас приступила, предвкушая ... <br>Но все триллеры как один оказались достаточно противные, с мерзкими подробностями, ввиду чего пришлось доставать из залежей давно отложенные и заброшенные деловые книги. И неожиданно увлеклась, не хуже чем триллерами.</p>
-
-											<p>Начну с начала и с «Начни...»</p>
-
-											<p>Я ставлю этой книге 10 из 10 баллов уже только за то, что она помогла мне проанализировать уже давно возникший страх побед. Есть такое выражение «в каждой победе неотвратимо зреет поражение, каждое поражение — начало победы». Моя жизнь такая яркая иллюстрация этого выражения, что с какого-то времени я просто стала бояться побед, ведь самые большие провалы в моей жизни случались сразу после крупных побед. И наоборот тоже.</p>
-
-											<p>Так вот, книга отчасти объясняет сей феномен, и причину явления автор видит в том, что поражения мы чаще всего анализируем, делаем выводы, корректируем поведение. А победам просто радуемся, в лучшем случае или воспринимаем как подарок судьбы, или как должное. Между тем, победы гораздо больше поражений нуждаются в анализе, и он часто полезнее анализа поражений, ведь этот анализ может быть и алгоритмом и чек-листом будущих свершений.</p>
-
-											<p>А вообще книга о пяти стадиях пути к самовыражению и полной самореализации: обучение, редактирование, мастерство, уборка урожая, передача опыта. На каждой стадии свои «фишки», подробный чек-лист по каждой из стадий в конце книге.</p>
-										</div>
-										<div class="commentsPopup__close"></div>
-									</div>
-									<!-- /commentsPopup -->
-								</div>
-
-								<!-- travel -->
-								<div class="travel">
-									<div class="row">
-										<div class="col-md-4 col-sm-6 col-12">
-											<div class="travel__item">
-
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- /travel -->
-
-
 
 								<div class="page__subscribe">
 									<div class="container">
@@ -374,6 +557,27 @@
 								</div>
 							</div>
 						</footer>
+
+						<div class="PopupOver">
+							<!-- commentsPopup -->
+							<div class="commentsPopup">
+								<h2 class="h2_black">Отзыв</h2>
+								<div class="commentsPopup__name">Анастасия, Москва</div>
+								<div class="commentsPopup__text">
+									<p>На отпуск планировала читать исключительно развлекательную литературу, накачала кучу триллеров и довольная как слон, в полуденный турецкий зной и детский сончас приступила, предвкушая ... <br>Но все триллеры как один оказались достаточно противные, с мерзкими подробностями, ввиду чего пришлось доставать из залежей давно отложенные и заброшенные деловые книги. И неожиданно увлеклась, не хуже чем триллерами.</p>
+
+									<p>Начну с начала и с «Начни...»</p>
+
+									<p>Я ставлю этой книге 10 из 10 баллов уже только за то, что она помогла мне проанализировать уже давно возникший страх побед. Есть такое выражение «в каждой победе неотвратимо зреет поражение, каждое поражение — начало победы». Моя жизнь такая яркая иллюстрация этого выражения, что с какого-то времени я просто стала бояться побед, ведь самые большие провалы в моей жизни случались сразу после крупных побед. И наоборот тоже.</p>
+
+									<p>Так вот, книга отчасти объясняет сей феномен, и причину явления автор видит в том, что поражения мы чаще всего анализируем, делаем выводы, корректируем поведение. А победам просто радуемся, в лучшем случае или воспринимаем как подарок судьбы, или как должное. Между тем, победы гораздо больше поражений нуждаются в анализе, и он часто полезнее анализа поражений, ведь этот анализ может быть и алгоритмом и чек-листом будущих свершений.</p>
+
+									<p>А вообще книга о пяти стадиях пути к самовыражению и полной самореализации: обучение, редактирование, мастерство, уборка урожая, передача опыта. На каждой стадии свои «фишки», подробный чек-лист по каждой из стадий в конце книге.</p>
+								</div>
+								<div class="commentsPopup__close"></div>
+							</div>
+							<!-- /commentsPopup -->
+						</div>
 
 					</body>
 					</html>

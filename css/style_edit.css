@@ -1,3 +1,13 @@
+@media (max-width: 479px) {
+	.mobileHide {
+		display: none;
+	}
+}
+@media (min-width: 479px) {
+	.mobileVisible {
+		display: none;
+	}
+}
 @media (max-width: 768px) {
 	.paddingTopFix {
 		padding-top: 94px;
@@ -199,6 +209,7 @@
 .newCategories__grid {
 	margin-bottom: 57px;
 }
+
 .newCard {
 	height: 100%;
 	position: relative;
@@ -305,8 +316,10 @@
 	left: -40px;
 }
 .fresh__arrow--next {
-	transform: translate(0,-70%) rotate(180deg);
 	right: -40px;
+}
+.fresh__arrow--next img {
+	transform: rotate(180deg);
 }
 
 .freshSlider {
@@ -318,15 +331,26 @@
 .freshSlider .slick-list {
 	margin: 0 -15px;
 }
+.freshSlider .slick-dots button {
+	display: none;
+}
 
 
 
 
 
 
-
+@media (max-width: 1200px) {
+	.freshSlider .slick-dots {
+		margin-top: 40px;
+	}
+	.freshSlider .slick-dots li {
+		width: 12px;
+		height: 12px;
+	}
+}
 @media (max-width: 1024px) {
-
+	
 }
 
 @media (max-width: 769px) {
@@ -406,5 +430,95 @@
 		position: absolute;
 		left: 0;
 		bottom: -20px;
+	}
+	.newCategories {
+    margin-bottom: 60px;
+	}
+	.newCategories__grid {
+    margin-bottom: 37px;
+	}
+	.newCategories__grid:not(:last-child) .newCard:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: #E6E6E6;
+		position: absolute;
+		left: 0;
+		bottom: -17px;
+	}
+	.thematic__grid:not(:last-child) .newCard:after {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 1px;
+		background-color: #D2CBC5;
+		position: absolute;
+		left: 0;
+		bottom: -17px;
+	}
+	.newCard__content {
+		padding: 17px 0 28px;
+	}
+	.newCard__title {
+		font-size: 2.1rem;
+	}
+	.newCard__link {
+		font-size: 0.9rem;
+	}
+	.newCard__play {
+		width: 60px;
+		height: 60px;
+	}
+	.thematic {
+    padding: 36px 0 38px;
+    margin-bottom: 56px;
+  }
+  .thematic .h2_black {
+    padding-bottom: 14px;
+	}
+	.thematic__grid {
+    margin-bottom: 38px;
+	}
+	.thematic .section-more {
+		margin-top: 0;
+	}
+	.fresh {
+    margin-bottom: 55px;
+  }
+	.fresh .h2_black {
+    margin-bottom: 0px;
+    padding-bottom: 13px;
+	}
+	.fresh__arrow {
+		width: 20px;
+		height: 20px;
+		padding: 0;
+		background-color: #6C130E;
+		border-radius: 50%;
+		transform: translate(0,-241%);
+	}
+	.fresh__arrow img {
+		position: absolute;
+		top: 5px;
+	}
+	.fresh__arrow--prev {
+		left: -10px;
+	}
+	.fresh__arrow--next {
+		right: -10px;
+	}
+	.fresh__arrow--prev img {
+		left: 6px;
+	}
+	.fresh__arrow--next img {
+		right: 6px;
+	}
+	.freshSlider .slick-dots {
+		margin-top: 9px;
+	}
+	.freshSlider .slick-dots li {
+		width: 6px;
+		height: 6px;
 	}
 }

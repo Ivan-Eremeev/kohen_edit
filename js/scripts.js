@@ -20,16 +20,24 @@ $(document).ready(function () {
 	    swipe: true, // Перелистывание пальцем
 	    draggable: true, // Перелистывание мышью
 	    responsive: [ // Адаптация
-	      {
-	      breakpoint: 992,
+	    	{
+	      breakpoint: 1200,
 	        settings: {
-	          arrows: false,
+	    			dots: true, // Пагинация
 	        }
 	      },
 	      {
-	      breakpoint: 720,
+	      breakpoint: 769,
 	        settings: {
-	          arrows: false,
+	    			slidesToShow: 2, // Сколько слайдов показывать на экране
+	    			dots: true, // Пагинация
+	        }
+	      },
+	      {
+	      breakpoint: 479,
+	        settings: {
+	          slidesToShow: 1, // Сколько слайдов показывать на экране
+	          dots: true, // Пагинация
 	        }
 	      }
 	    ]

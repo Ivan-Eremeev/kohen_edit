@@ -137,6 +137,7 @@
 .travel__img {
 	display: block;
 	position: relative;
+	overflow: hidden;
 }
 .travel__img:after {
 	content: '';
@@ -145,10 +146,13 @@
 }
 .travel__img img {
 	width: 100%;
-	height: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
+	transition: all 1s ease-out;
+}
+.travel__img:hover img {
+	transform: scale(1.05);
 }
 .travel__content {
 	position: relative;
@@ -186,11 +190,134 @@
 	margin-top: 0;
 }
 
+.newCategories {
+	margin-bottom: 90px;
+}
+.newCategories .section-more {
+	margin: 0;
+}
+.newCategories__grid {
+	margin-bottom: 57px;
+}
+.newCard {
+	height: 100%;
+	position: relative;
+}
+.newCard__img {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+.newCard__img:before {
+	content: '';
+	display: block;
+	padding-top: 56%;
+}
+.newCard__play {
+	width: 70px;
+	height: 70px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background-image: url(../img/play-icon.png);
+	background-repeat: no-repeat;
+	background-position: 52% 50%;
+	background-color: transparent;
+}
+.newCard__img:hover .newCard__play {
+	background-color: rgba(255,255,255, 0.2);
+}
+.newCard__img img {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 1s ease-out;
+}
+.newCard__img:hover img {
+	transform: scale(1.05);
+}
+.newCard__content {
+	padding: 6px 0 28px;
+}
+.newCard__title {
+	text-align: left;
+	margin-bottom: 4px;
+}
+.newCard__title a {
+	font-family: Oranienbaum;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+	color: #231F20;
+	transition: .3s;
+}
+.newCard__title a:hover {
+	color: #9a9a9a;
+}
+.newCard__descr {
+	margin-bottom: 10px;
+}
+.newCard__text {
 
+}
+.newCard__link {
+	font-size: 1.1rem;
+	color: #6C130E;
+	text-transform: uppercase;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 
+.thematic {
+	padding: 83px 0 90px;
+	margin-bottom: 85px;
+	background-color: #E5DED8;
+}
+.thematic__grid {
+	margin-bottom: 30px;
+}
+.thematic .h2_black {
+	padding-bottom: 33px;
+}
 
+.fresh {
+	margin-bottom: 110px;
+	position: relative;
+}
+.fresh .h2_black {
+	margin-bottom: 10px;
+}
+.fresh__slider {
 
+}
+.fresh__arrow {
+	padding: 20px 10px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-70%);
+	cursor: pointer;
+}
+.fresh__arrow--prev {
+	left: -40px;
+}
+.fresh__arrow--next {
+	transform: translate(0,-70%) rotate(180deg);
+	right: -40px;
+}
 
+.freshSlider {
+
+}
+.freshSlider__slide {
+	padding: 0 15px;
+}
+.freshSlider .slick-list {
+	margin: 0 -15px;
+}
 
 
 

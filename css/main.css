@@ -9464,7 +9464,6 @@ li:last-child .video-cycle-list__item {
     position: relative;
     margin: 0 auto 20px;
     padding: 0 0 20px;
-	max-width: 770px;
 }
 
 @media (min-width: 481px) {
@@ -9512,18 +9511,13 @@ li:last-child .video-cycle-list__item {
     z-index: 1;
 	margin: auto;
     width: 1000%;
-    background: #e5ded8;
+    top: 120px;
+    background: #003A3E;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (max-width: 479px) {
 	.lecture-hall__slider::before {
-		top: 40px;
-	}
-}
-
-@media (min-width: 769px) {
-	.lecture-hall__slider::before {
-		top: 80px;
+		top: 50px;
 	}
 }
 

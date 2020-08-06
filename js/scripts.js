@@ -55,6 +55,16 @@ $(document).ready(function () {
 
 	slider($('.freshSlider'));
 
+  $('.newsBanner__slider').slick({
+    slidesToShow: 1, // Сколько слайдов показывать на экране
+    slidesToScroll: 1, // Сколько слайдов пролистывать за раз
+    dots: true, // Пагинация
+    arrows: false, // Стрелки
+	  speed: 1500, // Скорость перехода слайдов
+	  fade: true,
+	  autoplay: true, // Автопрокрутка
+  });
+
 	// Модальное окно
 	function modal(modal) {
 		$('.modal-trigger').on('click', function() {

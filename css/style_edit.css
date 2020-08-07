@@ -8,6 +8,16 @@
 		display: none;
 	}
 }
+@media (max-width: 769px) {
+	.mobileHideBig {
+		display: none;
+	}
+}
+@media (min-width: 769px) {
+	.mobileVisibleBig {
+		display: none;
+	}
+}
 @media (max-width: 768px) {
 	.paddingTopFix {
 		padding-top: 94px;
@@ -438,32 +448,31 @@ html.lock {
 }
 
 .product {
+	margin-bottom: 57px;
+}
+.product__top {
 	display: flex;
 }
 .product__a {
-
+	width: calc(100% - 300px);
 }
 .product__b {
-	flex-basis: 300px;
-	padding-left: 30px;
+	width: 270px;
+	margin-left: 30px;
+	padding-bottom: 55px;
 	flex-shrink: 0;
+	position: relative;
 }
 
 .product__video {
 	position: relative;
-	margin-bottom: 32px;
 }
 .product__video video {
+	display: block;
 	width: 100%;
 }
-.product__free {
-	padding: 4px 20px;
-	background-color: #6C130E;
-	color: #fff;
-	position: absolute;
-	top: 21px;
-	left: 0;
-	user-select: none;
+.product__text {
+	margin-top: 37px;
 }
 
 .productPrice {
@@ -479,13 +488,14 @@ html.lock {
 }
 
 .productButtons {
-	margin-bottom: 208px;
+
 }
 .productButtons__buttons {
-	margin-bottom: 49px;
+	margin-bottom: 48px;
 }
 .productButtons__btn {
 	display: block;
+	max-width: 500px;
 	padding: 10px;
 	margin-bottom: 10px;
 	border: 1px solid #6C130E;
@@ -507,6 +517,12 @@ html.lock {
 	color: #fff;
 	box-shadow: 0 0 4px #414141;
 	background-color: #99403B;
+}
+.productButtons__btn--comments {
+	width: 100%;
+	margin-bottom: 0;
+	position: absolute;
+	bottom: 0;
 }
 .productButtons__social {
 
@@ -537,6 +553,156 @@ html.lock {
 	color: #fff;
 }
 
+.videoNew {
+	position: relative;
+	cursor: pointer;
+}
+.videoNew__play {
+	display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%,-50%);
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.videoNew__play:after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../img/new_images/play-icon.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 50%;
+	left: 56%;
+	transform: translate(-50%,-50%);
+}
+.videoNew:hover .videoNew__play {
+	background-color: rgba(255,255,255, 0.2);
+}
+.videoNew:hover .videoNew__play.play {
+	opacity: 1;
+}
+.videoNew__play.play {
+	opacity: 0;
+}
+.videoNew__free {
+	padding: 4px 20px;
+	background-color: #6C130E;
+	color: #fff;
+	position: absolute;
+	top: 21px;
+	left: 0;
+	user-select: none;
+}
+.videoNew__play.play:after {
+	content: '';
+	display: block;
+	height: 20px;
+	width: 2px;
+	background-color: #fff;
+}
+.videoNew__play.play:before {
+	content: '';
+	display: block;
+	height: 20px;
+	width: 2px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 46%;
+	transform: translate(-50%,-50%);
+}
+
+.videoList {
+	margin-bottom: 70px;
+}
+.videoList__container {
+	width: calc(100% - 300px);
+}
+.videoList__result {
+	margin-bottom: 27px;
+}
+.videoList__list {
+	
+}
+.videoList__item {
+	display: block;
+	align-items: center;
+	padding: 18px 29px 20px 63px;
+	text-decoration: none;
+	border-right: 2px solid transparent;
+	border-bottom: 1px solid #E9E9E9;
+	position: relative;
+}
+.videoList__item:first-child {
+	border-top: 1px solid #E9E9E9;
+}
+.videoList__item:hover {
+	border-right-color: #6C130E;
+}
+.videoList__item:hover .videoList__descr {
+	color: #6C130E;
+}
+.videoList__play {
+	display: block;
+	width: 45px;
+	height: 45px;
+	border: 1px solid #6C130E;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+}
+.videoList__play:after {
+  content: '';
+  display: block;
+  width: 9px;
+  height: 9px;
+  background-image: url(../img/new_images/play-icon-broun.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+}
+.videoList__text {
+	display: block;
+}
+.videoList__descr {
+	display: block;
+}
+.videoList__line {
+	display: flex;
+	justify-content: space-between;
+}
+.videoList__time {
+	color: #B2B2B2;
+}
+.videoList__free {
+	color: #B2B2B2;
+}
+.moreLectures {
+	margin-bottom: 60px;
+}
+.moreLectures .h2_black {
+	padding-bottom: 30px;
+}
+.moreLectures .section-more {
+	margin-top: 56px;
+}
+
+
 
 
 
@@ -555,7 +721,7 @@ html.lock {
 	}
 }
 @media (max-width: 1024px) {
-	
+
 }
 
 @media (max-width: 769px) {
@@ -588,6 +754,29 @@ html.lock {
 
 	.modal.open .modal_body {
 		transform: translate(-50%,-40%) scale(1, 1);
+	}
+	.product__top {
+		flex-wrap: wrap;
+	}
+	.product__a {
+		width: 100%;
+	}
+	.product__b {
+		width: 100%;
+		margin-left: 0;
+		padding-bottom: 0;
+	}
+	.productButtons__btn--comments {
+		position: relative;
+	}
+	.videoList__container {
+		width: 100%;
+	}
+	.product__text {
+    margin-bottom: 35px;
+	}
+	.productSocial {
+    margin-bottom: 40px;
 	}
 }
 
@@ -673,7 +862,7 @@ html.lock {
 	.newCard__content {
 		padding: 17px 0 28px;
 	}
-	.newCard__title {
+	.newCard__title a {
 		font-size: 2.1rem;
 	}
 	.newCard__link {
@@ -770,5 +959,77 @@ html.lock {
 	.newsBanner {
 	  padding-bottom: 40px;
 	  margin-bottom: 40px;
+	}
+	.videoNew__play {
+		width: 60px;
+		height: 60px;
+	}
+	.videoNew__play:after {
+		width: 12px;
+		height: 12px;
+	}
+	.videoNew__free {
+		padding: 4px 9px;
+		top: 11px;
+		font-size: 10px;
+	}
+	.product__text {
+		margin-bottom: 25px;
+	}
+	.productPrice {
+    margin-bottom: 10px;
+	}
+	.productButtons__buttons {
+    margin-bottom: 30px;
+	}
+	.productSocial__item {
+		width: 30px;
+		height: 30px;
+	}
+	.productSocial__text {
+    margin-right: 10px;
+	}
+	.productSocial {
+		margin-bottom: 27px;
+	}
+	.product {
+    margin-bottom: 34px;
+	}
+	.videoList {
+    margin-bottom: 54px;
+	}
+	.videoList__result {
+    margin-bottom: 15px;
+	}
+	.videoList__item {
+		padding: 14px 10px 20px 52px;
+	}
+	.videoNew__play.play:after {
+    height: 10px;
+  }
+  .videoNew__play.play:before {
+    height: 10px;
+  }
+  .moreLectures .h2_black {
+    padding-bottom: 14px;
+	}
+	.moreLectures__grid {
+		margin-bottom: 37px;
+	}
+	.moreLectures__grid:not(:last-child) .newCard:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #E6E6E6;
+    position: absolute;
+    left: 0;
+    bottom: -17px;
+  }
+  .moreLectures .section-more {
+    margin-top: 0px;
+	}
+	.moreLectures {
+    margin-bottom: 38px;
 	}
 }

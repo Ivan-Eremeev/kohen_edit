@@ -113,4 +113,23 @@ $(document).ready(function () {
 	// Закрыть модальное окно
 	// modalHide($('#modal-1'));
 
+	// Проигрывание видео при нажатии 
+	function videoNew(videoWrap) {
+		var video = videoWrap.find('video'),
+				playpause = videoWrap.find('.videoNew__play');
+		videoWrap.on('click', function() {
+			if (video.get(0).paused) {
+				video.get(0).play();
+				playpause.addClass('play');
+				videoWrap.addClass('play');
+				// video.attr('controls','');
+			}else {
+        video.get(0).pause();
+				playpause.removeClass('play');
+				videoWrap.removeClass('play');
+      }
+		});
+	};
+	videoNew($('.videoNew'));
+
 });

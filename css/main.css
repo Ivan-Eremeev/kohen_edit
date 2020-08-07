@@ -3836,9 +3836,6 @@ label input[type="radio"]:checked ~ span::after {
     -moz-transition: opacity 0.3s, visibility 0.3s;
     transition: opacity 0.3s, visibility 0.3s;
 }
-.video:hover .video__play {
-    background-color: rgba(255,255,255, 0.2);
-}
 
 @media (min-width: 481px) {
     .video__play {

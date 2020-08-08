@@ -5527,36 +5527,13 @@ a.lecture-hall-item__section:hover span {
 .content-wrap {
     position: relative;
     z-index: 2;
-    padding-top: 15px;
+    padding-top: 185px;
     padding-bottom: 50px;
 }
 
-@media (max-width: 640px) {
-    .sticky-wrapper + .content-wrap {
-        padding-top: 5px;
-    }
-}
-
-@media (min-width: 769px) {
+@media (max-width: 768px) {
     .content-wrap {
-        padding-top: 20px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .content-wrap {
-        padding-top: 35px;
-        padding-bottom: 45px;
-    }
-	
-    .is-start .content-wrap {
-        padding-top: 40px;
-    }
-}
-
-@media (min-width: 1025px) {
-    .is-book-reader .content-wrap {
-        padding-top: 35px;
+        padding-top: 100px;
     }
 }
 

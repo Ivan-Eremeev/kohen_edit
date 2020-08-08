@@ -113,7 +113,7 @@ $(document).ready(function () {
 	// Закрыть модальное окно
 	// modalHide($('#modal-1'));
 
-	// Проигрывание видео при нажатии 
+	// Проигрывание видео при нажатии
 	function videoNew(videoWrap) {
 		var video = videoWrap.find('video'),
 				playpause = videoWrap.find('.videoNew__play');
@@ -131,5 +131,20 @@ $(document).ready(function () {
 		});
 	};
 	videoNew($('.videoNew'));
+
+	// Stiky menu // Липкое меню.
+	function stikyMenu(header) {
+		headerTop = header.offset().top;
+		$(window).scroll(function(){
+			if( $(window).scrollTop() > headerTop ) {
+				header.addClass('stiky');
+			} else {
+				header.removeClass('stiky');
+			}
+		});
+	};
+
+	// Stiky menu // Липкое меню. При прокрутке добавляем класс stiky.
+	stikyMenu($('#header'));
 
 });

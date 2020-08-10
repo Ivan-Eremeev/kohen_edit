@@ -147,4 +147,18 @@ $(document).ready(function () {
 	// Stiky menu // Липкое меню. При прокрутке добавляем класс stiky.
 	stikyMenu($('#header'));
 
+	// Плавное раскрытие фильтра
+	function filter () {
+		var filter = $('#filter'),
+				item = filter.find('.filter__item.is-active');
+				row = item.next('.filter__row');
+		item.on('click', function() {
+			if (item.hasClass('active')) {
+				item.removeClass('active');
+			}else {
+				item.addClass('active');
+			}
+		});
+	};
+	filter();
 });
